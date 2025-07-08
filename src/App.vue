@@ -1,26 +1,11 @@
 <script setup lang="ts">
-let a = 1;
-
-console.log(a);
 </script>
 
 <template>
-  <div>
-    <h1>Hello World</h1>
-  </div>
+  <h1>vue3</h1>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style scoped lang="scss">
+h1 {  
+  color: red;
 }
 </style>
