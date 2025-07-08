@@ -3,7 +3,7 @@ alwaysApply: true
 ---
 # 代码风格
 1. 函数必须包含 JSDoc 注释
-2. 禁止使用 `var`，统一用 `let`
+2. 禁止使用 `var`，统一用 `let,const`
 
 # 依赖管理
 - 优先使用项目内已有的工具函数（如 `utils/request`）
@@ -19,9 +19,15 @@ priority: 1000
 2. 这个项目是比较老的,我也是网上找的,所以你要注意有没有落后的版本依赖 帮我更正
 # 二、类型约束
 1. 禁止使用隐式 any 类型  
-   - 示例：`const num: number = 123`（显式）  
-   - 禁止：`const num = 123`（隐式）  
+   - 示例：`let num: number = 123`（显式）  
+   - 禁止：`let num = 123`（隐式）  
 2. 接口命名必须以 `I` 开头（如 `interface IUser`）  
 
 # 三、项目约束
-
+let useUserStore = defineStore('User', {
+    state: () => ({
+        token: '',
+        userInfo: {}
+    })
+})
+1. 上面是示例 用大写的U来命名
