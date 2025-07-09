@@ -5,9 +5,11 @@ import { reqLogin } from "@/api/user";
 import type { loginFormData, loginResponseData } from "@/api/user/type";
 import type { UserState } from "./types/type";
 import { SET_TOKEN, GET_TOKEN } from "@/utils/token";
+import { constantRoute } from "@/router/routers";
 const useUserStore = defineStore("User", {
   state: (): UserState => ({
     token: GET_TOKEN() || null,
+    menuRoutes: constantRoute, //默认路由
   }),
   //异步|逻辑的地方
   actions: {
